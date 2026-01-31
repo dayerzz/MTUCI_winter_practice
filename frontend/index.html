@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контроль полосы ОТ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="page active">
+  <h1>Контроль полосы общественного транспорта</h1>
+
+  <p class="description">
+    Веб-сервис для автоматического детектирования мотоциклов
+    на полосах общественного транспорта.
+  </p>
+
+  <div id="drop-zone" class="drop-zone">
+    <div class="drop-content">
+      <img src="assets/upload.svg" class="upload-icon">
+      <p id="drop-text">
+        Перетащите изображение сюда<br>
+        или нажмите для загрузки
+      </p>
+    </div>
+    <input type="file" id="file-input" accept="image/*" hidden>
+  </div>
+
+  <button id="check-btn" class="btn nav" disabled>
+    Проверка
+  </button>
+
+  <h2 id="status-text"></h2>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="actions">
+    <button class="btn nav"
+            onclick="location.href='report.html'">
+      Перейти к статистике и истории детектирования
+    </button>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

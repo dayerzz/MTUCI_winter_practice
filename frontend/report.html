@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Статистика и история</title>
+  <link rel="stylesheet" href="/frontend/styles.css">
+</head>
+<body>
+
+<h1>Статистика и история детектирования</h1>
+
+<div class="stats">
+  <div class="card" id="checks">Проверок: 0</div>
+  <div class="card" id="motos">Мотоциклов: 0</div>
+  <div class="card" id="viol">Нарушений: 0</div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Файл</th>
+      <th>Дата</th>
+      <th>Мотоциклов</th>
+      <th>Нарушений</th>
+    </tr>
+  </thead>
+  <tbody id="table"></tbody>
+</table>
+
+<div class="actions">
+  <button class="btn nav"
+          onclick="location.href='http://127.0.0.1:8000/report/pdf'">
+    Скачать PDF-отчёт
+  </button>
+
+  <button class="btn nav"
+          onclick="location.href='http://127.0.0.1:8000/report/excel'">
+    Скачать Excel-отчёт
+  </button>
+
+  <button class="btn nav"
+          onclick="location.href='index.html'">
+    Назад
+  </button>
+</div>
+
+<script src="/frontend/report.js"></script>
+</body>
+</html>
