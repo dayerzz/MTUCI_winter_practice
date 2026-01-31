@@ -43,21 +43,21 @@
 ## Инструкция по запуску проекта:
 
 1. Клонировать репозиторий:
-   «git clone https://github.com/dayerzz/MTUCI_winter_practice.git»
-   «cd MTUCI_winter_practice»
+   - «git clone https://github.com/dayerzz/MTUCI_winter_practice.git»
+   - «cd MTUCI_winter_practice»
 
 2. Установить зависимости backend:
-   «cd backend»
-   «pip install -r requirements.txt»
+   - «cd backend»
+   - «pip install -r requirements.txt»
 
 3. Создать файл .env и указать строку подключения к базе данных:
-   «DATABASE_URL=postgresql://user:password@localhost:5432/traffic_lane_db»
+   - «DATABASE_URL=postgresql://user:password@localhost:5432/traffic_lane_db»
 
 4. Запустить backend:
-   «python -m uvicorn server:app --reload»
+   - «python -m uvicorn server:app --reload»
 
 5. Запустить frontend:
-   запустить через Live Server (VS Code) файл index.html
+   - запустить через Live Server (VS Code) файл index.html
 
 6. Перейти в браузере:
    - Frontend: http://127.0.0.1:5500
